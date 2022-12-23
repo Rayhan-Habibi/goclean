@@ -1,0 +1,136 @@
+@font-face {
+    font-family: OpenSans;
+    src: url(fonts/static/OpenSans/OpenSans-Medium.ttf);
+}
+
+*{
+    font-family: OpenSans;
+}
+.section-padding{
+    padding: 100px 0;
+}
+
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 35vh;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption a{
+    width: 15%;
+    margin-top: 30;
+    size: 18px;
+    line-height: 1.9;
+}
+
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+.bg-light .navbar-brand{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.bg-light .navbar-brand:focus,
+.bg-light .navbar-brand:hover{
+    color: #000;
+}
+.bg-light .navbar-nav .navbar-link{
+    color: #000;
+}
+.w-100{
+    height: 100vh;
+}
+
+/* Responsive Design*/
+
+@media only screen and (max-width: 767px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 50px;
+    }
+    .carousel-caption h5{
+        font-size: 30px;
+    }
+    .carousel-caption p{
+        font-size: 8pt;
+    }
+    #carouselImg{
+        max-width: 100%;
+        height: 40vh;
+        margin-top: 60px;
+    }
+    .carousel-item{
+        height: 40vh;
+    }
+    .about-text{
+        text-align: center;
+    }
+    .about-text h2{
+        margin-top: 15px;
+        font-size: 20pt;
+        margin-bottom: 10px;
+    }
+    .about-text p{
+        font-size: 13pt;
+    }
+    .about-text a{
+        font-size: 15pt;
+    }
+    .card-body a{
+        font-size: 15pt;
+    }
+    .card-body p{
+        font-size: 13pt;
+    }
+}
+
+
+
+.card-img-top{
+    height: 600px;
+}
+.card-title{
+    font-size: 20pt;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.card-body{
+    text-align: center;
+}
+.card-body p{
+    margin-bottom: 15px;
+}
+
+body{
+    overflow: hidden;
+}
+.wrapper{
+    overflow: scroll;
+    height: 100vh;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+section{
+    
+    scroll-snap-align: start;
+    position: relative;
+}
